@@ -7,7 +7,12 @@ from typing import Optional
 
 # Mocking OpenClaw/Moltbot interaction for this standalone script
 def send_openclaw_message(message: str):
-    print(f"\n[OpenClaw System]: {message}")
+    # Encoding handling for Windows consoles
+    try:
+        print(f"\n[OpenClaw System]: {message}")
+    except UnicodeEncodeError:
+        # Fallback for systems that can't print emojis
+        print(f"\n[OpenClaw System]: {message.encode('ascii', 'replace').decode()}")
 
 def wait_for_user_reply() -> str:
     return input("[User Reply]: ").strip()

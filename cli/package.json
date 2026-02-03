@@ -1,0 +1,21 @@
+{
+  "name": "molt-pay",
+  "version": "1.0.0",
+  "description": "CLI installer for Molt-Pay OpenClaw Skill",
+  "main": "index.js",
+  "bin": {
+    "molt-pay": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "install-skill": "node index.js install"
+  },
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "chalk": "^4.1.2",
+    "dotenv": "^16.0.0",
+    "fs-extra": "^10.0.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

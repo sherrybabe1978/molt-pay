@@ -1,0 +1,24 @@
+{
+  "name": "molt-pay-cli",
+  "version": "0.1.0",
+  "description": "Installer for Molt-Pay Secure Handshake Protocol",
+  "main": "molt-pay-install.js",
+  "bin": {
+    "molt-pay-cli": "./molt-pay-install.js"
+  },
+  "scripts": {
+    "start": "node molt-pay-install.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "molt-pay",
+    "agent",
+    "payments",
+    "security"
+  ],
+  "author": "",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

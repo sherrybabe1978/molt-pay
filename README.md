@@ -26,18 +26,15 @@ The core of Molt-Pay is the Human-in-the-Loop (HITL) security sequence:
 ### 3. Developer Quick-Start (CLI)
 To integrate Molt-Pay into a local OpenClaw instance:
 
-1. **Download the Installer:**
-   Get the `molt-pay-install.js` script from the repository.
-
-2. **Run the Installer:**
+1. **Run the Installer:**
    ```bash
-   node molt-pay-install.js
+   npx molt-pay-cli
    ```
 
-3. **Follow the Prompts:**
+2. **Follow the Prompts:**
    The script will ask for your MetaMask address to provision your secure **Safe Smart Account**.
 
-4. **Automatic Setup:**
+3. **Automatic Setup:**
    The installer will automatically generate:
    - `molt-pay.py`: The secure payment skill logic.
    - `PAYMENT_SKILL.md`: The instruction manual for your AI agent.

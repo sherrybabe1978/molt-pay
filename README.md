@@ -52,9 +52,13 @@ In this script, we utilize the Safe Core SDK and Pimlico infrastructure to:
 > **Note for Alpha Users:** This version currently simulates the on-chain deployment for testing purposes. Real-money settlement will be enabled in the Beta release.
 
 #### Required Environment Variables:
-The installer automatically handles these, but you should verify your `.env` file contains:
+The installer automatically generates a `.env` file in your **current working directory** (the same folder where you ran the script).
+
+You should verify this file contains:
 - `MOLT_PAY_VAULT_ADDRESS`: Your bot's secure wallet.
 - `MOLT_PAY_OWNER_ADDRESS`: Your master controller address.
+
+*(Note: On Mac/Linux, files starting with `.` may be hidden. Use `ls -a` to see it.)*
 
 
 ### 4. Security & Exploit Protection

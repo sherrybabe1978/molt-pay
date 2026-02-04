@@ -24,7 +24,7 @@ The core of Molt-Pay is the Human-in-the-Loop (HITL) security sequence:
 5. **Settlement:** The Smart Account releases the USDC.e payment to the merchant.
 
 ### 3. Developer Quick-Start (CLI)
-To integrate Molt-Pay into a local OpenClaw instance (Alpha Release):
+To integrate Molt-Pay into a local OpenClaw instance:
 
 1. **Download the Installer:**
    Get the `molt-pay-install.js` script from the repository.
@@ -48,8 +48,6 @@ In this script, we utilize the Safe Core SDK and Pimlico infrastructure to:
 - Provision a **Safe Smart Account** owned by your MetaMask address.
 - Enable the **Pimlico Paymaster** for a "Gasless" experience (pay fees in USDC).
 - Output your unique **Molt Vault Address**.
-
-> **Note for Alpha Users:** This version currently simulates the on-chain deployment for testing purposes. Real-money settlement will be enabled in the Beta release.
 
 #### Required Environment Variables:
 The installer automatically generates a `.env` file in your **current working directory** (the same folder where you ran the script).

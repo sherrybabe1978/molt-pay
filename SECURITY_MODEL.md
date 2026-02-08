@@ -1,6 +1,6 @@
-# 🔐 Molt‑Pay Security Model (v0.1)
+# 🔐 Molt‑Pay Security Model
 
-This document describes the **intended security properties** of Molt‑Pay v0.1
+This document describes the **intended security properties** of Molt‑Pay
 under its defined threat model. It does not constitute a warranty or guarantee.
 
 ---
@@ -45,7 +45,7 @@ Molt‑Pay is **not designed to protect against**:
 
 ---
 
-## Known Limitations (v0.1)
+## Known Limitations
 
 - No cryptographic approval signatures yet
 - No cumulative daily spend enforcement
